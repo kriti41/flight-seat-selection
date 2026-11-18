@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import HomePage from "./components/HomePage";
 import MealSelector from "./components/MealSelector";
-import SeatDetails from "./components/seatdetails";
+import SeatDetails from "./components/seatdetails.jsx";
 import PassengerSelector from "./components/PassengerSelector";
 import AircraftLayout from "./components/AircraftLayout";
 import BookingSummary from "./components/BookingSummary";
