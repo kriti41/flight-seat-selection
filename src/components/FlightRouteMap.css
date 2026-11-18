@@ -1,0 +1,184 @@
+.ss-route-section {
+  width: 100%;
+  margin: 24px 0;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e8edf5;
+  border-radius: 20px;
+  box-shadow: 0 8px 28px rgba(31, 55, 90, 0.055);
+}
+
+.ss-route-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.ss-route-eyebrow {
+  color: #3478f6;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+.ss-route-heading h3 {
+  margin: 6px 0;
+  color: #17243b;
+  font-size: 19px;
+  font-weight: 800; /* Fixed from 750 */
+}
+
+.ss-route-heading p {
+  margin: 0;
+  color: #78869b;
+  font-size: 12px;
+}
+
+.ss-route-distance {
+  padding: 10px 15px;
+  background: #f3f7ff;
+  border-radius: 12px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ss-route-distance span {
+  display: block;
+  margin-bottom: 4px;
+  color: #8190a7;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.ss-route-distance strong {
+  color: #2867d8;
+  font-size: 14px;
+}
+
+.ss-route-map {
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #edf3f9;
+}
+
+.ss-leaflet-map {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.ss-airport-marker-wrapper,
+.ss-plane-marker-wrapper {
+  background: transparent;
+  border: none;
+}
+
+.ss-airport-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 30px;
+  color: #ffffff;
+  background: #2867d8;
+  border: 2px solid #ffffff;
+  border-radius: 9px;
+  box-shadow: 0 3px 12px rgba(31, 83, 160, 0.3);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.ss-plane-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: #2867d8;
+  background: #ffffff;
+  border: 1px solid #dce7f8;
+  border-radius: 50%;
+  box-shadow: 0 3px 12px rgba(31, 55, 90, 0.15);
+  font-size: 19px;
+}
+
+.ss-route-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 15px;
+  color: #718096;
+  font-size: 11px;
+}
+
+.ss-route-footer span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.ss-route-dot {
+  width: 8px;
+  height: 8px;
+  background: #2867d8;
+  border-radius: 50%;
+}
+
+.ss-arrival-dot {
+  background: #16a681;
+}
+
+.ss-route-demo-label {
+  margin-left: auto;
+  color: #9aa5b5;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .ss-route-section {
+    padding: 15px;
+  }
+
+  .ss-route-heading {
+    align-items: flex-start;
+  }
+
+  .ss-route-heading h3 {
+    font-size: 16px;
+  }
+
+  .ss-route-heading p {
+    max-width: 220px;
+    line-height: 1.5;
+  }
+
+  .ss-route-distance {
+    padding: 8px;
+  }
+
+  .ss-route-map {
+    height: 340px;
+    min-height: 340px;
+    position: relative;
+  }
+
+  .ss-leaflet-map {
+    height: 340px;
+    min-height: 340px;
+    position: relative;
+  }
+
+  .ss-route-footer {
+    gap: 10px;
+  }
+
+  .ss-route-demo-label {
+    margin-left: 0;
+  }
+}
