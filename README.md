@@ -1,4 +1,16 @@
-# ✈️ SkySelect – Flight Booking & Seat Selection Platform
+<p align="center">
+  <img
+    src="public/skyselect-logo.png"
+    alt="SkySelect Logo"
+    width="320"
+  />
+</p>
+
+<h1 align="center">SkySelect – Flight Booking Platform</h1>
+
+<p align="center">
+  <strong>Fly • Select • Explore</strong>
+</p># ✈️ SkySelect – Flight Booking & Seat Selection Platform
 
 **SkySelect** is a modern, responsive flight booking web application built using React.js. It provides an interactive flight booking experience, allowing users to explore flights, manage passengers, select seats, customize meals, and access their digital boarding passes.
 
@@ -233,8 +245,6 @@ The application uses browser Local Storage for demo-level user information and c
 ## 👩‍💻 Author
 
 **Kriti Mishra**
-
-M.Tech – Artificial Intelligence
 
 GitHub: [@kriti41](https://github.com/kriti41)
 
