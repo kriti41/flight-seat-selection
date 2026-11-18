@@ -2,11 +2,11 @@
 import React from "react";
 
 const airlineLogos = {
-  indigo: "/airlines/indigo.png",
-  "air india": "/airlines/air-india.png",
-  "akasa air": "/airlines/akasa.png",
-  akasa: "/airlines/akasa.png",
-  "air india express": "/airlines/air-india-express.png",
+  indigo: "indigo.png",
+  "air india": "air-india.png",
+  "akasa air": "akasa.png",
+  akasa: "akasa.png",
+  "air india express": "air-india-express.png",
 };
 
 export default function AirlineLogo({
@@ -15,7 +15,11 @@ export default function AirlineLogo({
   className = "",
 }) {
   const key = (airline || "").trim().toLowerCase();
-  const logo = airlineLogos[key];
+  const filename = airlineLogos[key];
+
+  const logo = filename
+    ? `${import.meta.env.BASE_URL}airlines/${filename}`
+    : null;
 
   return (
     <div
